@@ -8,7 +8,10 @@
 </head>
 
 <body>
-    <img src="mercedesandme.png">
+    <div class="image">
+        <img src="mercedesandme.png">
+    </div>
+    <div class="main">
     <!--<div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -20,19 +23,21 @@
         <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
         <button class="tablinks" onclick="openPage(event, 'Resume')">Resume</button>
     </div>
-    
     <div id="About Me" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">
             <!--<div class='closeBar1'></div>
             <div class='closeBar2'></div>-->
         </span>
         <h2>About Me</h2>
-        <img src="mercedesandme.png" class="profile">
-            <h3>Education:</h3>
-                <h4>Purdue University</h4>
-                    <p>West Lafayette, Indiana</p>
-                <h4>Madison Consolidated High School</h4>
-                    <p>Madison, Indiana</p>
+        <button class="resume_button" onclick="openPage(event, 'Resume')">LinkedIn</button>
+        <button class="resume_button" onclick="openPage(event, 'Resume')">Resume</button>
+            <h3 class="education">Education:</h3>
+                <h4>Purdue University <h5>West Lafayette, Indiana</h5></h4>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p class="p2">Mathematics Minor</p>
+                    <p class="p2">Certificate in Entrepreneurship and Innovation</p>
+                    <p class="p2">Honors College</p>
+                <h4>Madison Consolidated High School <h5>Madison, Indiana</h5></h4>
             <h3>Hometown:</h3>
                 <p>Madison, Indiana</p>
         <h2>Contact</h2>
@@ -40,7 +45,7 @@
             <h3><a href="https://www.flickr.com/gp/165665758@N08/z3dN8C" target="_blank">Flickr</a></h3>
             <!--<h3>Email</h3>
                 <p>bbhardin1@gmail.com</p>-->
-        <h2>Upcoming Plans</h2>
+        <h2>Experience</h2>
             <h3>GE Aviation</h3>
                 <h4>Software Engineering Intern</h4>
                     <p>Summer 2019</p>
@@ -86,6 +91,6 @@
         }
         
     </script>
-    
+    </div>
 </body>
 

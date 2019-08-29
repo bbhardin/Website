@@ -10,17 +10,29 @@ html {
 }
 
 body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
     background: var(--background-color);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    //color: #545454;
     font-family: "Geneva", Helvetica, Arial, sans-serif;
-    //font-size: 16px;
-    //line-height: 1.5;
     margin: auto;
     max-width: 900px;
     padding: 1em 1em 0em;
-    border: 15px solid var(--blue-color);
+    //border: 15px solid var(--blue-color);
     padding-bottom: 10px;
+}
+
+.image {
+    background: var(--background-color);
+    margin: 0px;
+    max-width: page;
+    padding: 0px;
+    z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,9 +60,23 @@ h3 {
     padding-left: 10px;
 }
 
+.education {
+    padding-bottom: 40px;
+}
+
 h4 {
     font-size: 15px;
     padding-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h5 {
+    font-size: 15px;
+    padding-left: 0px;
+    margin: 0px;
+    float: right;
+    color: darkgray
 }
 
 a {
@@ -70,6 +96,16 @@ p {
     padding-left: 30px;
     line-height: 1;
     color: var(--darkgray-color);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.p2 {
+    padding-left: 35px;
+    line-height: 1;
+    color: var(--darkgray-color);
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 samp {
@@ -99,9 +135,23 @@ img {
     //border: 10px solid rgba(0, 0, 0, 0.12);
     //border-radius: 4px;
     display: block;
-    margin: 1.3em auto;
+    margin: 0px;
     //max-width: 95%;
     max-width: 100%;
+    margin-bottom: -100px;
+    z-index: -1;
+}
+
+.resume_button {
+    float: right;
+    font-size: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    background-color: var(--blue-color);
+    margin-right: 10px;
 }
 
 .profile {
