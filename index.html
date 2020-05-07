@@ -8,16 +8,19 @@
 </head>
 
 <body>
-    <div class="image">
-        <img src="mercedesandme.png">
+    <div class="header">
+        <img class="avatar" src="images/venice.JPG">
+        <div class="header-text">Ben Hardin</div>
+        <!-- Inspired by: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.flickr.com/gp/165665758@N08/4FDeEd" target="_blank" class="fa fa-flickr"></a>
+        <a href="https://www.twitter.com/b_b_hardin" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/benjamin-hardin" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/bbhardin" target="_blank" class="fa fa-github"></a>
+        <a class="contact" onclick="openPage(event, 'Resume')">Contact Me</a>
     </div>
+    
     <div class="main">
-    <!--<div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>-->
-    <li><h1>Ben Hardin</h1></li>
     <div class="tab">
         <button class="tablinks" onclick="openPage(event, 'About Me')" id="defaultOpen">About Me</button>
         <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
@@ -29,42 +32,63 @@
             <div class='closeBar2'></div>-->
         </span>
         <h2>About Me</h2>
-        <button class="resume_button" onclick="openPage(event, 'Resume')">LinkedIn</button>
-        <button class="resume_button" onclick="openPage(event, 'Resume')">Resume</button>
-            <h3 class="education">Education:</h3>
+        <!--<button class="resume_button" onclick="openPage(event, 'Resume')">LinkedIn</button>
+        <button class="resume_button" onclick="openPage(event, 'Resume')">Resume</button>-->
+            <h3>Education:</h3>
                 <h4>Purdue University <h5>West Lafayette, Indiana</h5></h4>
                     <p>Bachelor of Science in Computer Science</p>
-                    <p class="p2">Mathematics Minor</p>
-                    <p class="p2">Certificate in Entrepreneurship and Innovation</p>
-                    <p class="p2">Honors College</p>
+                    <p2>Mathematics Minor</p2>
+                    <p2>Certificate in Entrepreneurship and Innovation</p2>
+                    <p2>Honors College</p2>
                 <h4>Madison Consolidated High School <h5>Madison, Indiana</h5></h4>
             <h3>Hometown:</h3>
                 <p>Madison, Indiana</p>
-        <h2>Contact</h2>
+        <h2>Experience</h2>
+            <h3>General Motors <h5>Summer 2020</h5></h3>
+                <h4>Software Engineer Intern - Autonomous Vehicles Division</h4>
+            <h3>General Electric Aviation <h5>Summer 2019</h5></h3>
+                <h4>Software Engineer Intern</h4>
+                    <p2>– Wrote algorithms utilizing Python and MySQL to manage Enterprise Architect models and reports vital to other engineering teams.</p2>
+                    <p2>– Coordinated with Aviage Systems to fulﬁll customer requirements and release documentation for the Comac C919 aircraft.</p2>
+        <!--<h2>Contact</h2>
             <h3><a href="https://www.linkedin.com/in/benjamin-hardin/">LinkedIn</a></h3>
             <h3><a href="https://www.flickr.com/gp/165665758@N08/z3dN8C" target="_blank">Flickr</a></h3>
-            <!--<h3>Email</h3>
-                <p>bbhardin1@gmail.com</p>-->
-        <h2>Experience</h2>
-            <h3>GE Aviation</h3>
-                <h4>Software Engineering Intern</h4>
-                    <p>Summer 2019</p>
+            <h3>Email</h3>
+                <p></p>-->
     </div>
     
+        
+        
+        
     <div id="Projects" class="tabcontent">
         <h2>My Projects </h2>
-            <h3>GitHub</h3>
-                <p><a href="https://github.com/BetaBen1">Personal</a></p>
-                <p><a href="https://github.com/BenHardin1">School</a></p>
+        <h3><a href="https://github.com/PurdueHCR">Purdue Honors College Development Committee</a></h3>
+        <img class="avatar2" src="images/hcr_logo.png">
+            <h4>President</h4>
+                <p>– Guided teams to deliver and maintain a house competition app to 900 Honors faculty and students.</p>
+                <p>– Overhauled UI for simplicity and adherence to Apple guidelines.</p>
+                <p>– Utilized Google Firebase to manage point system.</p>
+        <!--<h3>GitHub</h3>
+            <p><a href="https://github.com/BetaBen1">Personal</a></p>
+            <p><a href="https://github.com/BenHardin1">School</a></p>-->
+        <h3>Doctor'sNote - CS307 Software Engineering Semester Project</h3>
+        <img class="avatar2" src="images/DoctorsNote.png">
+            <h4>Scrum Master</h4>
+                <p>– Communicated between project coordinator and team, ensuring communication and adherence to course goals.</p>
+                <p>– Guided iOS team, writing front-end and API algorithms, to ensure app fulﬁlled requirements of an encrypted patient-doctor messaging platform.</p>
+                <p>– Organized and led team meetings to promote communication even when working in several timezones during the COVID-19 pandemic.</p>
+                
     </div>
     
+    
+        
+        
     <div id="Resume" class="tabcontent">
-        <h2>Spring 2019</h2>
-        <img src="Resume_Spring_2019.png">
-        <h2>Fall 2018</h2>
-        <img src="Resume_Fall_2018.png">
+        <a class="download" href="downloads/Benjamin_Hardin_Resume.pdf" download="benjamin_hardin_resume.pdf">Download</a>
+        <img src="images/benjamin_hardin_resume.png">
     </div>
-    
+
+        
     <script>
 
         function openPage(evt, titleName){

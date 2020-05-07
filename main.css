@@ -2,16 +2,124 @@
     --background-color: #f8f8f8;
     --blue-color: #145777;
     --darkgray-color: #555555;
+    --lightgray-color: #dddddd;
+    --orange-color: #ee964b;
+    --grayblue-color: #9BC1BC;
+    --eggshell: #eeebe9;
+    --lightblue-color: #1792cc;
 }
 
 html {
-    background: var(--blue-color);
+    background: var(--eggshell);
     -webkit-font-smoothing: antialiased;
 }
 
 body {
     padding: 0px;
     margin: 0px;
+    min-width: 800px;
+    width: auto !important;
+    width: 1000px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+    margin: 5px;
+}
+
+.fa:hover {
+    opacity: 0.95;
+    color: var(--orange-color);
+}
+
+.contact {
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    position: relative;
+    background: white;
+    font-family: "Geneva", Helvetica, bold;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contact:hover {
+    opacity: 0.95;
+    color: var(--orange-color);
+}
+
+.download {
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    position: relative;
+    background: gray;
+    color: white;
+    font-family: "Geneva", Helvetica, bold;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.download:hover {
+    opacity: 0.95;
+    color: var(--orange-color);
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 95px;
+    height: auto;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    margin-right: 15px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.avatar2 {
+    vertical-align: middle;
+    width: 130px;
+    height: auto;
+    margin-right: 15px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.header {
+    margin: auto;
+    min-width: 800px;
+    width: auto !important;
+    max-width: 900px;
+    padding: 25px;
+    padding-bottom: 125px;
+    text-align: left;
+    background: var(--orange-color);//#1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+.header-text {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 1.3;
+    padding-top: px;
+    font-family: "Geneva", Helvetica, bold;
+    float:left;
 }
 
 .main {
@@ -21,9 +129,11 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     font-family: "Geneva", Helvetica, Arial, sans-serif;
     margin: auto;
+    min-width: 850px;
+    width: auto !important;
     max-width: 900px;
-    padding: 1em 1em 0em;
-    //border: 15px solid var(--blue-color);
+    padding: 20px 20px 20px;
+    //border: 15px solid var(--gray-color);
     padding-bottom: 10px;
 }
 
@@ -46,26 +156,26 @@ h1 {
     font-size: 50px;
     line-height: 1;
     margin: 0px;
-    margin-top: -70px;
+    margin-top: 70px;
     margin-bottom: 5px;
 }
 
 h2 {
     font-size: 30px;
-    border-bottom: 3px solid var(--blue-color);
+    margin-bottom: 15px;
+    margin-right: -20px;
+    border-bottom: 3px solid var(--orange-color);
 }
 
 h3 {
     font-size: 20px;
     padding-left: 10px;
-}
-
-.education {
-    padding-bottom: 40px;
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 h4 {
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -76,6 +186,7 @@ h5 {
     padding-left: 0px;
     margin: 0px;
     float: right;
+    position: relative;
     color: darkgray
 }
 
@@ -93,19 +204,21 @@ b, strong {
 }
 
 p {
-    padding-left: 30px;
     line-height: 1;
     color: var(--darkgray-color);
     margin-bottom: 10px;
     margin-top: 5px;
+    margin-left: 30px;
+    display: block;
 }
 
-.p2 {
-    padding-left: 35px;
-    line-height: 1;
+p2 {
+    line-height: 1.2;
     color: var(--darkgray-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
+    margin-left: 45px;
+    display: block;
 }
 
 samp {
@@ -138,7 +251,7 @@ img {
     margin: 0px;
     //max-width: 95%;
     max-width: 100%;
-    margin-bottom: -100px;
+    
     z-index: -1;
 }
 
@@ -150,7 +263,7 @@ img {
     padding-right: 20px;
     padding-left: 20px;
     color: white;
-    background-color: var(--blue-color);
+    background-color: var(--orange-color);
     margin-right: 10px;
 }
 
@@ -167,7 +280,7 @@ img {
 
 .tab {
     overflow: hidden;
-    border-top: 5px solid var(--blue-color);
+    border-top: 5px solid var(--orange-color);
     background-color: #fff;
     margin: 0px;
 }
